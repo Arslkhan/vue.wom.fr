@@ -134,15 +134,15 @@ export default () => {
       }],
     ],
     i18n: {
-      country: 'US',
+      country: 'GB',
       baseUrl: process.env.VSF_STORE_URL,
       strategy: 'prefix',
       locales: [
         {
           code: 'default',
           file: 'en.js',
-          iso: 'en_US',
-          defaultCurrency: 'USD',
+          iso: 'en_GB',
+          defaultCurrency: 'GBP',
         },
         {
           code: 'german',
@@ -161,7 +161,7 @@ export default () => {
           default: {
             currency: {
               style: 'currency',
-              currency: 'USD',
+              currency: 'GBP',
               currencyDisplay: 'symbol',
             },
           },

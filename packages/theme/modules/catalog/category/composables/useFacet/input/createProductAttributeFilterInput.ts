@@ -7,7 +7,7 @@ export const rangeFilters = ['price'];
 export function createProductAttributeFilterInput(params: ComposableFunctionArgs<FacetSearchParams>): ProductAttributeFilterInput {
   const attributeFilter : Record<string, { from: number, to: number } | { eq: unknown } | { in: unknown }> = {};
   const inputFilters = params?.filters ?? {};
-
+  // console.log('Params is the', params);
   const categoryFilter = {
     category_uid: { in: [params.category_uid, ...inputFilters.category_uid ?? []] },
   };

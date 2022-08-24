@@ -41,7 +41,9 @@ export function useFacet(): UseFacetInterface {
         sort: createProductAttributeSortInput(params.sort || ''),
         currentPage: params.page,
       };
-
+      // console.log('productSearchParams LOgging', productSearchParams);
+      // console.log('query query', query);
+      // console.log('getFacetDataQuery getFacetDataQuery', getFacetDataQuery);
       const { data } = await query<{ products: Products }>(getFacetDataQuery, productSearchParams);
       const products = data?.products ?? null;
       Logger.debug('[Result]:', { products });

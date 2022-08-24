@@ -44,7 +44,7 @@ export function useImage(): UseImageInterface {
     // @ts-ignore
     const { imageProvider, magentoBaseUrl } = context.$vsf.$magento.config;
 
-    if (imageProvider !== 'ipx') {
+    if (fullImageUrl && fullImageUrl !== 'null' && fullImageUrl !== 'undefined' && imageProvider !== 'ipx') {
       const url = fullImageUrl.split(`${magentoBaseUrl}`);
 
       const regex = /cache\/(.*?)\//gm;

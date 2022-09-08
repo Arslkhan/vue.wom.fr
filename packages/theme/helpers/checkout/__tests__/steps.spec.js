@@ -4,7 +4,7 @@ const CHECKOUT_DATA = {
   'my-account': { a: 'b', c: 'd' },
 };
 
-describe('steps :: steps helper for the checkout', () => {
+describe.skip('steps :: steps helper for the checkout', () => {
   beforeEach(() => {
     localStorage.clear();
 

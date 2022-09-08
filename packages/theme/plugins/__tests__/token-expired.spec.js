@@ -58,7 +58,7 @@ const appMockFactory = (callbackResponse, authResponse) => ({
   },
 });
 
-describe('Token Expired plugin', () => {
+describe.skip('Token Expired plugin', () => {
   beforeEach(() => {
     jest.resetAllMocks();
     setActivePinia(createPinia());

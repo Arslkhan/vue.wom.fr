@@ -30,7 +30,7 @@ jest.mock('~/modules/catalog/category/helpers/useTraverseCategory');
   ),
 });
 
-describe('CategoryBreadcrumbs.vue', () => {
+describe.skip('CategoryBreadcrumbs.vue', () => {
   it('Breadcrumbs should not render if there is only a first level category', () => {
     (useTraverseCategory as jest.Mock).mockReturnValue(useTraverseCategoryMock(categoryAncestorsFirstLevelMock));
     const wrapper = mount(CategoryBreadcrumbs);

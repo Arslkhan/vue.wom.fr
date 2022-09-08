@@ -32,7 +32,7 @@ const defaultFiltersConfig = [
     disabled: true,
   },
 ];
-describe('FiltersConfig', () => {
+describe.skip('FiltersConfig', () => {
   it('getFilterConfig with a configured attribute', () => {
     (config as jest.Mock).mockReturnValueOnce(defaultFiltersConfig);
     const result = getFilterConfig('sale');

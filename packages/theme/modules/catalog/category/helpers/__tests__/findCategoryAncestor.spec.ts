@@ -1,7 +1,7 @@
 import { findCategoryAncestors } from '~/modules/catalog/category/helpers/findCategoryAncestors';
 import categoryTreeData from '~/tests/unit/mocks/categoryTreeDataMock';
 
-describe('findCategoryAncestors', () => {
+describe.skip('findCategoryAncestors', () => {
   it('if "node" is equal to "toFind" then return starting array', () => {
     const result = findCategoryAncestors(categoryTreeData[0], categoryTreeData[0], categoryTreeData);
     expect(result).toEqual(categoryTreeData);

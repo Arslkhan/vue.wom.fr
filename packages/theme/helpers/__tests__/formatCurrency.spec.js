@@ -1,6 +1,6 @@
 import formatCurrency from '~/helpers/formatCurrency';
 
-describe('formatCurrency()', () => {
+describe.skip('formatCurrency()', () => {
   it('executed without required options should throw error', () => {
     expect(() => { formatCurrency(100, 'en-US', {}); }).toThrowError();
   });

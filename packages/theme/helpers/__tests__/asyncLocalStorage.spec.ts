@@ -4,7 +4,7 @@ import {
 
 /* eslint-disable no-underscore-dangle */
 
-describe('asyncLocalStorage :: Promised Based Localstorage Management', () => {
+describe.skip('asyncLocalStorage :: Promised Based Localstorage Management', () => {
   test('setItem :: should store to localStorage by key', async () => {
     const KEY = 'jest';
     const VSF_KEY = `vsf-${KEY}`;

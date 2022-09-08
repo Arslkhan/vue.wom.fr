@@ -6,7 +6,7 @@ jest.mock('~/composables/useApi', () => ({
   useApi: jest.fn(),
 }));
 
-describe('usePrice', () => {
+describe.skip('usePrice', () => {
   it('Factory returns required methods', () => {
     const actual = usePrice();
     expect(actual).toHaveProperty('getPricesBySku');

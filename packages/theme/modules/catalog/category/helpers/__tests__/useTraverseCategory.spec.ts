@@ -23,7 +23,7 @@ jest.mock('@nuxtjs/composition-api', () => {
   };
 });
 
-describe('UseTraverseCategory', () => {
+describe.skip('UseTraverseCategory', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });

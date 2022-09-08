@@ -50,7 +50,7 @@ const contextMockFactory = (callbackResponse) => ({
   error: jest.fn(),
 });
 
-describe('Url resolver middleware', () => {
+describe.skip('Url resolver middleware', () => {
   beforeEach(() => {
     jest.resetAllMocks();
     setActivePinia(createPinia());

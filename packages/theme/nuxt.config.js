@@ -33,7 +33,7 @@ export default () => {
     dev: process.env.VSF_NUXT_APP_ENV !== 'production',
     server: {
       port: process.env.VSF_NUXT_APP_PORT,
-      host: '0.0.0.0',
+      host: 'localhost',
     },
     head: {
       title: process.env.npm_package_name || '',

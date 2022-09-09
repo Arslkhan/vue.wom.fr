@@ -30,7 +30,7 @@ module.exports = {
         },
         cookiesDefaultOpts: {
           httpOnly: false,
-          secure: false,
+          secure: true,
           sameSite: 'Strict',
           path: '/',
         },
